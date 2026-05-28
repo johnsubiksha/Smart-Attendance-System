@@ -1,4 +1,41 @@
+```gitignore id="y7m3q1"
+# Virtual Environment
+venv/
+env/
+
+# Python Cache
 __pycache__/
 *.pyc
-models/
+
+# VS Code
+.vscode/
+
+# Dataset Images
 dataset/
+
+# Trained Models
+models/
+trainer.yml
+*.pkl
+*.h5
+
+# Attendance Files
+attendance.xlsx
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# TensorFlow / Temp
+tmp/
+temp/
+
+# Environment Variables
+.env
+```
