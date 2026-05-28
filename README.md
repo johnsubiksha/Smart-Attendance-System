@@ -1,23 +1,62 @@
 # Smart Attendance System
 
-## Overview
-Smart Attendance System is an AI-powered face recognition application that automates attendance tracking using computer vision.
+AI-based attendance system using Face Recognition.
 
 ## Features
-- Real-time face detection
-- Face recognition using webcam
-- Automated attendance tracking
-- Attendance record management
 
-## Technologies Used
-- Python
-- OpenCV
-- face_recognition
-- FastAPI
+* Face Detection using OpenCV
+* Face Recognition using FaceNet
+* Automatic Attendance Marking
+* Duplicate Prevention
+* Unknown User Detection
+* Excel Attendance Storage
 
-## Installation
+---
 
-1. Clone the repository
+# Technologies Used
 
-```bash
-git clone https://github.com/johnsubiksha/Smart-Attendance-System
+* Python
+* OpenCV
+* FaceNet
+* TensorFlow
+* Pandas
+* FastAPI
+
+---
+
+# Project Workflow
+
+```text id="dj6pph"
+Register Face
+    ↓
+Generate Embeddings
+    ↓
+Recognize Face
+    ↓
+Mark Attendance
+```
+
+---
+
+# Run Project
+
+## Register Face
+
+```bash id="o0v8op"
+python backend/capture_faces.py
+```
+
+## Generate Embeddings
+
+```bash id="r5l12d"
+python backend/utils/trainer.py
+```
+
+## Start Recognition
+
+```bash id="svw8kq"
+python -m backend.utils.recognizer
+```
+
+---
+
